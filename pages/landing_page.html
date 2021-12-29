@@ -8,13 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="../styles/main.css"rel="stylesheet">
-    <title> Login Page </title>
+    <title> landing page </title>
 </head>
 <body>
     <header class = "header"> 
-        <a href="./landing_page.html"> 
+        <a href="./landing_page.html" class="logo_container"> 
             <img class = "header__img" src="../media/logox.png" alt="logo">
         </a>
+
+        <nav class= "menu">
+            <ul>
+                <li><a href="#">Acerca de </a></li>
+                <li><a href="#">Partidas </a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+       
+
         <div class = "header__iniciarsesion" >
             <div class = "header__iniciarsesion--profile">
                 <a href="./profile.html">
@@ -28,10 +38,38 @@
             </ul>
         </div>
     </header>
-    <section class ="main"> </section>
+
+    <section class ="main">
         <h2 class="main__title"> ROCK PAPER SCISSOR </h2>
+  
+        <div class="actions_container">
+            <img class ="img__rock" src="../media/scissor.png"/>
+            <img class ="img__paper" src="../media/paper.png"/>
+            <img class ="img__scissor" src="../media/rock.png"/>
+        </div>
+
+        <div class = "information">
+            <p>
+                No es necesario que todos los enlaces estén contenidos en un elemento está destinado sólo para el bloque principal de enlaces de navegación; por lo general, el elemento a menudo tiene una lista de enlaces que no necesitan 
+                estar en un elemento Un documento puede tener varios elementos por ejemplo, 
+                uno para la navegación del sitio y otro para la navegación dentro de 
+                la página. 
+            </p>
+            <p>
+                Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios con discapacidades, pueden usar este elemento para determinar si se omite la representación inicial del contenido de solo navegación. 
+            </p>
+            <p>
+                Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios con discapacidades, pueden usar este elemento para determinar si se omite la representación inicial del contenido de solo navegación. 
+            </p>
+        </div>
     </section>
+
+    <footer class="footer">
+            <a href="/">terminos de uso</a>
+            <a href="/">declaracion de privacidad</a>
+            <a href="/">centro de ayuda</a>
+    </footer>
+
 </body>
 <script src="../src/main.js"></script>
 </html>
-
