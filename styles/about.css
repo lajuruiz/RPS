@@ -1,0 +1,38 @@
+
+.about{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about p{
+    padding:2px;
+    border:2px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image__player1 {
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    border-radius: 40px;
+}
+
+.image__player2 {
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    border-radius: 40px;
+}
+
+.image__player3 {
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    border-radius: 40px;
+}

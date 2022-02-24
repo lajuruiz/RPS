@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="../styles/main.css"rel="stylesheet">
+    <link href="../styles/login.css"rel="stylesheet">
+    <title> login page </title>
+</head>
+<body>
+    <header class = "header"> 
+        <a href="./landing_page.html" class="logo__container"> 
+            <img class = "header__img" src="../media/logox.png" alt="logo">
+        </a>
+
+        <nav class= "menu">
+            <ul>
+                <li><a href="./about_page.html">Acerca de </a></li>
+                <li><a href="./board.html">tablero </a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+       
+
+        <div class = "header__iniciarsesion" >
+            <div class = "header__iniciarsesion--profile">
+                <a href="./profile.html">
+                    <img src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-user-avatars-becris-lineal-becris-1.png"/>
+                </a>
+            </div>
+            <ul>
+                <li><a href="./login.html">Inicia Sesion </a></li>
+            </ul>
+        </div>
+    </header>
+
+<section class ="login">
+    <section class= "login__caja">
+        <h2> Inicia sesion</h2>
+        <form class="login__caja--form"> 
+            <input class="input" type="text" placeholder="Correo Electronico">
+            <input class="input" type="password" placeholder="Contrasena">
+            <button class= "button"> Iniciar sesion </button>
+            <div class= login__caja--remember-me>
+                <label>
+                    <input type="checkbox" name="" id="Caja1" value="checkbos"> Recuerdame
+                </label>
+                    <a href="/"> olvide mi contrasena </a>
+            </div>
+        </form>
+        <section class= "login__caja--socialmedia">
+            <div> <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="google"> Inicia sesion con Google </div>
+            <div> <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="google"> Inicia sesion con Facebook </div>
+        </section>
+        <p class= "login__caja--registro"> No tienes ninguna cuenta <a href="register_page.html"> Registrate </a> </p>
+    </section>   
+</section>
+<footer class="footer">
+        <a href="/"> terminos de uso </a> 
+        <a href="/"> Informacion y contacto</a> 
+        <a href="/"> centro de ayuda </a>
+</footer>
+</body>
+<script src="../src/main.js"></script>
+</html>

@@ -1,0 +1,96 @@
+.board{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-top: 50px;
+    min-height: 400px;
+    width: 80%;
+    border-radius: 40px;
+    border:2px solid white;
+    background:linear-gradient(#bdb2ff, #abc4ff );
+}
+
+
+.board__title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title{
+    margin: 20px 10px 0px 10px;
+}
+.action__container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.action__container:hover {
+    cursor: pointer;
+    transform: translate(0px, -30px);
+    transition: 500ms;
+}
+
+.action__container:not(:hover) {
+    transition: 500ms;
+}
+
+.action__container:active {
+    transform: scale(90%) !important;
+    transition: 500ms;
+}
+
+.action__icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color:#98BAE7;
+}
+.action__text{
+    text-align: center;
+}
+
+.board__player{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.form__board{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1050px) {
+    .form__board {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:563px) and (max-width: 674px) {
+    .form__board {
+        flex-direction: row;
+    }
+}
+
+.button__player{
+    background-color: rgba(255,255,255,0.1);
+    border:none;
+    border-radius: 30px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+

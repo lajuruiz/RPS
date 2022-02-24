@@ -1,0 +1,49 @@
+.register{
+    background:linear-gradient(#bdb2ff, #abc4ff );
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+
+}
+
+.register__box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 255 0.1);
+    min-height: 600px;
+    width: 300px;
+    border-radius: 40px;
+    border:2px solid white;
+    padding: 20px 40px 40px;
+    margin: 20px;
+}
+
+.register__box--form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.register2{
+    margin-top: 80px;
+}
+.register__box--iniciasesion {
+font-size: 15px;
+display: flex;
+font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register__box--iniciasesion a {
+    font-size: 16px;  
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 7px;
+}
+
+.register__box--iniciasesion a:hover {
+    text-decoration: underline;
+}

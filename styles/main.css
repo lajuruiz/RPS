@@ -1,11 +1,19 @@
 body {
-    margin: 0%;
+    display: flex;
+    margin: 0;
     background-color: #bdb2ff;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+body > * {
+    display: flex;
+    flex-shrink: 0;
+}
+
 .header {
     background-color: #9a89f3;
-    width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -20,43 +28,45 @@ body {
     align-self: center;
 }
 
-.header__iniciarsesion{
-    margin-right:85px;
+.header__login{
+    width: fit-content;
     height: fit-content;
     align-self: center;
 }
-.header__iniciarsesion:hover ul , ul:hover{
+.header__login:hover ul , ul:hover{
     display: block;
 }
 
-.header__iniciarsesion ul{
+.header__login ul{
     display: none;
     list-style: none;
     padding: 0%;
     position: absolute;
-    width: 130px;
+    width: 100px;
     text-align: right;
     margin : 0px 0px 0px -35px;
 }
 
-.header__iniciarsesion li{
+.header__login li{
     margin: 20px 0px;
 }
 
-.header__iniciarsesion li a{
+.header__login li a{
     color: black;
     text-decoration: none;
 }
-.header__iniciarsesion--profile{
+.header__login--profile{
     padding: 0%;
-    margin-right: 8px;
-    width: 35px;
+    width: fit-content;
     display: flex;
 }
 
 .main{
+    flex-direction: column;
+    flex-grow: 1;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:linear-gradient(#bdb2ff, #abc4ff );
 }
 .main__title{
     display: flex;
@@ -71,7 +81,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px; 
+    width: 100px; 
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -79,7 +89,7 @@ body {
 .img__scissor{
     display: flex;
     justify-content: center;
-    width: 130px; 
+    width: 100px; 
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -87,17 +97,29 @@ body {
 .img__paper{
     display: flex;
     justify-content: center;
-    width: 130px; 
+    width: 100px; 
     margin-top: 10px;
     margin-left: 10px;
 } 
 
-.actions_container{
+.actions__container{
     display: flex;
     width: auto;
     align-content: center;
     align-self: center;
     justify-content: center;
+}
+
+.information{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+.information p{
+    padding:2px;
+    border:2px;
 }
 
 .menu{
@@ -125,22 +147,56 @@ body {
     text-decoration: none;
 }
 
-.information{
-    padding: 20px;
-    font-size: 20px;
-    margin-right: 60px;
-    margin-left: 60px;
 
+.input{
+    background-color: transparent;
+    border-left:0px ;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    border-right: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    height: 30px;
 }
 
+::placeholder{
+    color:black;
+}
+
+.button{
+    background-color: rgba(255,255,255,0.1);
+    border:none;
+    border-radius: 30px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+
 .footer{
+    display:flex;
+    align-items: center;
+    height: 100px;
     width: 100%;
-    height: 300px;
     background-color: #9a89f3;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-content: center;
-    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer a {
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
 }
 
