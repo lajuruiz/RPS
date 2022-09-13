@@ -28,31 +28,30 @@
             </ul>
         </div>
     </header>
-
     <section class="board"> 
         <div class="board__title">
             <h2 class="title"> ROCK PAPER SCISSORS</h2>
         </div>
-        <div class="action__container rock__container">
+        <div id="rockAction" class="action__container rock__container">
             <img class="action__icon" src="../media/board-rock.png">
             <h4 class="action__text">Rock</h4>
         </div>
-        <div class="action__container paper__container">
+        <div id="paperAction" class="action__container paper__container">
             <img class="action__icon" src="../media/board--paper.png">
             <h4 class="action__text">Paper</h4>
         </div>
-        <div class="action__container scissors__container">
+        <div id="scissorsAction" class="action__container scissors__container">
             <img class="action__icon" src="../media/board--scissor.png">  
             <h4 class="action__text">Scissors</h4>
         </div>
 
-    <section class="board__player">
+    <section id=form class="board__player">
         <div class="form__board">
-            <button class= "button__player"> 1 player </button>
-            <button class= "button__player"> 2 Player </button>
+            <button id="player1" class= "button__player active">  player 1 </button>
+            <button id="player2" class= "button__player "> Player 2  </button>
+            <button id="reset" class="button" >   Reset   </button>
         </div>
-    </section>
-
-    </section>
+    <script src="../src/main.js"> </script>
 </body>
+</section>
 </html>

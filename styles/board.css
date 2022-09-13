@@ -93,4 +93,6 @@
     margin: 10px;
 }
 
-
+.button__player.active{
+    border: solid white;
+}
